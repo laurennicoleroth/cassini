@@ -8,27 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController
-{
-
+class ViewController: UIViewController {
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let ivc = segue.destinationViewController as? ImageViewController {
             if let identifier = segue.identifier {
                 switch identifier {
-                    case "hot1":
-                        ivc.imageURL = DemoURL.HOT.Hot1
-                        ivc.title = "Hot 1"
-                    case "hot2":
-                        ivc.imageURL = DemoURL.HOT.Hot2
-                        ivc.title = "Hot 2"
-                    case "hot3":
-                        ivc.imageURL = DemoURL.HOT.Hot3
-                        ivc.title = "Hot 3"
-                    default: break
+                case "Earth":
+                    ivc.imageURL = DemoURL.NASA.Earth
+                    ivc.title = "Earth"
+                case "Saturn":
+                    ivc.imageURL = DemoURL.NASA.Saturn
+                    ivc.title = "Saturn"
+                case "Cassini":
+                    ivc.imageURL = DemoURL.NASA.Cassini
+                    ivc.title = "Cassini"
+                default: break
                 }
             }
         }
     }
-
+    
 }
+
 

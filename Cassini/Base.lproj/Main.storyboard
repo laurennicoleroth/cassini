@@ -24,25 +24,25 @@
                                     <constraint firstAttribute="width" constant="142" id="bcH-Fy-xCi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Hot1"/>
+                                <state key="normal" title="Earth"/>
                                 <connections>
-                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="hot1" id="ayF-C6-LMY"/>
+                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="Earth" id="ayF-C6-LMY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q8b-cM-EeB">
                                 <rect key="frame" x="229" y="383" width="142" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Hot3"/>
+                                <state key="normal" title="Cassini"/>
                                 <connections>
-                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="hot3" id="jUV-7G-YFE"/>
+                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="Cassini" id="jUV-7G-YFE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGY-6T-7AB">
                                 <rect key="frame" x="229" y="270" width="142" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <state key="normal" title="Hot2"/>
+                                <state key="normal" title="Saturn"/>
                                 <connections>
-                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="hot2" id="4D0-Pp-y2l"/>
+                                    <segue destination="pEa-Bg-7vr" kind="showDetail" identifier="Saturn" id="4D0-Pp-y2l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -135,6 +135,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ayF-C6-LMY"/>
+        <segue reference="jUV-7G-YFE"/>
     </inferredMetricsTieBreakers>
 </document>
