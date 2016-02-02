@@ -8,18 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let ivc = segue.destinationViewController as? ImageViewController {
+            if let identifier = segue.identifier {
+                switch identifier {
+                    case "hot1":
+                        ivc.imageURL = DemoURL.HOT.Hot1
+                        ivc.title = "Hot 1"
+                    case "hot2":
+                        ivc.imageURL = DemoURL.HOT.Hot2
+                        ivc.title = "Hot 2"
+                    case "hot3":
+                        ivc.imageURL = DemoURL.HOT.Hot3
+                        ivc.title = "Hot 3"
+                    default: break
+                }
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
